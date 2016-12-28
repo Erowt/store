@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div {
+		border: 1px solid red;
+		width: 800px;
+		height: 500px;
+		margin: 20px auto;
+		background-color:  #066;
+		position: relative;
+	}
+	div #i1 {
+		position: absolute;
+		left: 200px;
+		top: 100px;
+	}
+	div #i2 {
+		position: absolute;
+		left: 150px;
+		top: 50px;
+	}
+	div #i3 {
+		position: absolute;
+		left: 250px;
+		top: 150px;
+	}
+	/*堆叠顺序越小，越在下层，
+	     堆叠顺序越大，越在上层。*/
+	img:hover {
+		z-index: 10000;
+	}
+
+</style>
+</head>
+<body>
+	<div>
+		<img src="../images/1.jpg" id="i1"/>
+		<img src="../images/2.jpg" id="i2"/>
+		<img src="../images/3.jpg" id="i3"/>
+	</div>
+</body>
+</html>

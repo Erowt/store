@@ -1,0 +1,276 @@
+/*0.瀵圭綉椤靛仛涓�浜涘熀纭�鐨勫０鏄�*/
+/*鏄熸槸閫氱敤閫夋嫨鍣紝鍙互閫夋嫨涓�鍒�*/
+* {
+	padding:0;
+	margin:0;
+}
+
+/*1.鍒嗗尯骞惰缃瘡涓尯鍩熺殑灏哄*/
+div {
+	border:1px solid #F00;
+	margin:0 auto;
+}
+.logo {
+	width:960px;
+	height:61px;
+}
+.nav {
+	height:91px;
+}
+.core {
+	height:410px;
+	/*棰勭暀鍐呰竟璺濓紝浠ヤ究浜庢斁娓愬彉鏉�*/
+	padding-top:10px;
+}
+.copy {
+	width:960px;
+	height:50px;
+}
+.content {
+	width:950px;
+	height:390px;
+	border:5px solid #8ac1db;
+}
+.content div {
+	width:910px;
+	height:40px;
+}
+.content .data {
+	height:310px;
+}
+/*2.璁剧疆椤甸潰鐨勮儗鏅�*/
+body {
+	background-color:#0EA8D8;
+}
+.logo {
+	background: 
+		url(../img/top_bg.png);
+}
+.nav {
+	background-color: #0488BB;
+}
+.core {
+	background: 
+		url(../img/content_bg.png)
+		repeat-x
+		top;
+}
+.content {
+	background-color: #E8F3F8;
+}
+
+/*3.璁剧疆鏂囨湰鏍峰紡*/
+body {
+	font-family: 
+		"寰蒋闆呴粦","鏂囨硥椹挎榛�","榛戜綋";
+	font-size: 14px;
+}
+.logo {
+	text-align: right;
+	line-height: 61px;
+}
+.logo a {
+	margin-right: 40px;
+	color: #FFF;
+	text-decoration: none;
+}
+.logo a:hover {
+	font-weight: bold;
+}
+.copy p {
+	text-align: center;
+	color :#FFF;
+	line-height: 27px;
+}
+/*4.璁剧疆琛ㄦ牸鏍峰紡*/
+.data table {
+	border :1px solid #CCC;
+	/*杈规鍚堝苟蹇呴』鍐欏湪table涓�*/
+	border-collapse: collapse;
+	width :100%;
+}
+.data td {
+	border :1px solid #CCC;
+	text-align: center;
+}
+/*鏍囬琛岄珮40*/
+
+.data thead tr {
+	height: 40px;
+	background-color: #FBEDCE;
+	font-weight: bold;
+}
+/*鏁版嵁琛岄珮32*/
+.data tbody tr {
+	height: 32px;
+	background-color: #FFF;
+}
+/*鎮仠鏃惰儗鏅姞娣�*/
+.data tbody tr:hover {
+	background-color: #F7F9FD;
+}
+.update {
+	padding-left: 15px;
+	background: 
+		url(../img/modification.png)
+		no-repeat
+		left;
+		border: 0;
+}
+/*鎮仠鏃堕紶鏍囧彉涓烘墜鍨�*/
+.update:hover {
+	cursor: pointer;
+}
+.delete {
+	padding-left: 15px;
+	background: 
+		url(../img/delete.png)
+		no-repeat
+		left;
+		border: 0;
+}
+.delete:hover {
+	cursor: pointer;
+}
+/*5.瀵筶ogo鍥剧墖鍙婃秷鎭彁绀烘杩涜瀹氫綅*/
+.logo img{
+	float: left; 
+}
+.content {
+	/*浠呬粎鏄负浜嗚瀛愬厓绱犱互姝や负鐩爣杩涜缁濆瀹氫綅鏂逛究*/
+	position: relative;
+}
+.content .msg {
+	position: absolute;
+	left: 200px;
+	top: 100px;
+	width: 500px;
+	height: 80px
+}
+.msg img {
+	float: right;
+	margin: 5px;
+}	
+.msg img:hover {
+	cursor: pointer;
+}	
+.msg p {
+	margin-left: 38px;
+	line-height: 80px;
+}
+.msg {
+	border: 1px solid #F68A8A;
+	background: #FDECEC 
+	url(../img/ok.png)
+	no-repeat
+	10px 32.5px;
+}
+/*设置导航中的图标*/
+.nav ul {
+	border: 1px solid yellow;
+	width: 960px;
+	height: 91px;
+	margin: 0 auto;
+	list-style-type: none;
+}
+.nav li {
+	width: 68px;
+	height: 77px;
+	margin: 7px 14px;	
+	float: left;
+	border: 1px solid yellow;
+}
+.index {
+	background-image:
+		url(../img/index_out.png);
+}
+.index:hover {
+	cursor: pointer;
+	background-image:
+		url(../img/index_on.png);
+}
+.role {
+	background-image:
+		url(../img/role_out.png);
+}
+.role:hover {
+	cursor: pointer;
+	background-image:
+		url(../img/role_on.png);
+}
+.admin {
+	background-image:
+		url(../img/admin_out.png);
+}
+.admin:hover {
+	cursor: pointer;
+	background-image:
+		url(../img/admin_on.png);
+}
+.fee {
+	background-image:
+		url(../img/fee_out.png);
+}
+.fee:hover {
+	cursor: pointer;
+	background-image:
+		url(../img/fee_on.png);
+}
+.account {
+	background-image:
+		url(../img/account_out.png);
+}
+.account:hover {
+	cursor: pointer;
+	background-image:
+		url(../img/account_on.png);
+}
+.service {
+	background-image:
+		url(../img/service_out.png);
+}
+.service:hover {
+	cursor: pointer;
+	background-image:
+		url(../img/service_on.png);
+}
+.bill {
+	background-image:
+		url(../img/bill_out.png);
+}
+.bill:hover {
+	cursor: pointer;
+	background-image:
+		url(../img/bill_on.png);
+}
+.report {
+	background-image:
+		url(../img/report_out.png);
+}
+.report:hover {
+	cursor: pointer;
+	background-image:
+		url(../img/report_on.png);
+}
+.information {
+	background-image:
+		url(../img/information_out.png);
+}
+.information:hover {
+	cursor: pointer;
+	background-image:
+		url(../img/information_on.png);
+}
+.password {
+	background-image:
+		url(../img/password_out.png);
+}
+.password:hover {
+	cursor: pointer;
+	background-image:
+		url(../img/password_on.png);
+}
+/*去掉调试时加的边框*/
+div,.nav ul,.nav li {
+	border: 0;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	#d0,p {
+		width: 400px;
+		border: 1px solid red;
+	}
+	#d1,#d2,#d3 {
+		width: 100px;
+		height: 100px;
+		margin: 10px;
+	}
+	#d1 {
+		background-color: red;
+	}
+	#d2 {
+		background-color: green;
+	}
+	#d3 {
+		background-color: blue;
+	}
+	/*演示浮动*/
+	#d1,#d2,#d3 {
+		float: left;
+	}
+	/*消除浮动影响*/
+	/*clear会让所在段在浮动下方*/
+	p {
+		clear: left;
+	}
+	/*弄一个空框加载div0里，在空框里加clear，父元素边框即可保留*/
+	#d4 {
+		clear: left;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="d0">
+		<div id="d1"></div>
+		<div id="d2"></div>
+		<div id="d3"></div>
+		<div id="d4"></div>
+		<p>浮动时看看我的位置p'</p>
+	</div>
+	<p>浮动时看看我的位置</p>
+</body>
+</html>

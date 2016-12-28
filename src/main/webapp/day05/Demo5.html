@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	//页面加载时立刻生成随机数，
+	//这个时机比加载body早，
+	//比用户点击按钮早。
+	//[0,1)小-->[0,10)小-->[0,10)整	
+	var r = parseInt(Math.random()*10);
+	
+	function guess() {
+		//获取文本框
+		var input = document.getElementById("num");
+		//获取文本框的值
+		var n = input.value;
+		console.log(n);
+		//获取span
+		var span = document.getElementById("result");
+	
+		if(isNaN(n)){
+			span.innerHTML = "请输入数字！";
+		}else if(n<r){
+			span.innerHTML = "猜小了！";
+		}else if(n>r){
+			span.innerHTML = "猜大了！";
+		}else if(n==r){
+			span.innerHTML = "猜对了！";
+		}
+	}
+	
+	
+	
+</script>
+</head>
+<body>
+	<input type="text" id="num"/>
+	<input type="button" value="猜" onclick="guess()"/>
+	<span id="result"></span>
+</body>
+</html>
